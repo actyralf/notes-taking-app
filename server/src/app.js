@@ -15,7 +15,7 @@ app.get("/", (_, res) => {
 
 app.get("/users", async (_, res) => {
   try {
-    const users = await db("users");
+    const users = await db("xxx");
     return res.json(users);
   } catch (err) {
     console.log(err);
