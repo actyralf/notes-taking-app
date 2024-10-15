@@ -14,6 +14,7 @@ function App() {
           throw new Error("Data fetching error");
         }
         const data = await response.json();
+        console.log(data);
         setUsers(data);
       } catch (err) {
         console.log(err);
