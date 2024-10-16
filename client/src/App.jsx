@@ -24,12 +24,17 @@ function App() {
     loadUsers();
   }, []);
 
+  function handleClick() {
+    alert("I have been clicked");
+  }
+
   return (
     <>
       <h1>Fullstack Demo</h1>
       <h2>
         Showing data from <code>{API_URL}</code>
       </h2>
+      <button onClick={handleClick}>Click mich</button>
       <ul>
         {users.map(({ id, name, email }) => (
           <li key={id}>

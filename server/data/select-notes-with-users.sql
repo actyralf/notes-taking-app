@@ -1,0 +1,1 @@
+SELECT * FROM notes LEFT JOIN users ON notes.user_id = users.id;
